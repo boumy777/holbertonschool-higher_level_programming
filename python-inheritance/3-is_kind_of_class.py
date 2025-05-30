@@ -1,17 +1,7 @@
 #!/usr/bin/python3
-"""
-This module defines the is_same_class function.
-"""
+"""Defines a function that checks object type or inheritance."""
 
-def is_same_class(obj, a_class):
-    """
-    Check if the object is exactly an instance of the specified class.
 
-    Args:
-        obj: The object to check.
-        a_class: The class to compare against.
-
-    Returns:
-        bool: True if obj is exactly an instance of a_class, False otherwise.
-    """
-    return type(obj) is a_class
+def is_kind_of_class(obj, a_class):
+    """Return True if obj is an instance or inherited from a_class."""
+    return isinstance(obj, a_class)
